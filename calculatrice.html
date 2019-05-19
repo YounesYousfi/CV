@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link type="text/css" rel="stylesheet" href="css/stylecalc.css" />
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Calculatrice</title>
+    </head>
+    <body style="padding-left:200px; padding-right:200px">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="CVYounes.html">CV Younès YOUSFI</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="CVYounes.html">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="experiences.html">Expériences</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="formation.html">Formation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="certifs.html">Certifs, Interêts, Langues</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+	  	  	  <li class="nav-item active">
+        <a class="nav-link" href="calculatrice.html">Calculatrice<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      <h3>Ingénieur Qualité</h3>
+    </span>
+  </div>
+</nav>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Calculatrice</h1>
+  </div>
+</div>
+        <div id="container">
+            <div id="calculator">
+                <div id="header">
+                    <input type="text" id="number" value="0" autocomplete="off" disabled />
+                </div>
+                <div id="body">
+                    <div class="buttons">7</div>
+                    <div class="buttons">8</div>
+                    <div class="buttons">9</div>
+                    <div class="buttons">/</div>
+                    <div class="buttons">4</div>
+                    <div class="buttons">5</div>
+                    <div class="buttons">6</div>
+                    <div class="buttons">*</div>
+                    <div class="buttons">1</div>
+                    <div class="buttons">2</div>
+                    <div class="buttons">3</div>
+                    <div class="buttons">-</div>
+                    <div class="buttons">0</div>
+                    <div class="buttons">.</div>
+                    <div class="buttons">=</div>
+                    <div class="buttons">+</div>
+                </div>
+				<input type="button" value="C" id="refresh" />
+            </div>
+        </div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var calc = new Calculator();
+                calc.run();
+            });
+        </script>
+    </body>
+</html>
